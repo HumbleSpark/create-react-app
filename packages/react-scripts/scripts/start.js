@@ -27,7 +27,6 @@ var clearConsole = require('react-dev-utils/clearConsole');
 var checkRequiredFiles = require('react-dev-utils/checkRequiredFiles');
 var formatWebpackMessages = require('react-dev-utils/formatWebpackMessages');
 var getProcessForPort = require('react-dev-utils/getProcessForPort');
-// var openBrowser = require('react-dev-utils/openBrowser');
 var prompt = require('react-dev-utils/prompt');
 var pathExists = require('path-exists');
 var config = require('../config/webpack.config.dev');
@@ -277,10 +276,6 @@ function runDevServer(host, port, protocol) {
     }
     console.log(chalk.cyan('Starting the development server...'));
     console.log();
-
-    if (isInteractive) {
-      // openBrowser(protocol + '://' + host + ':' + port + '/');
-    }
   });
 }
 
